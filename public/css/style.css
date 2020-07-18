@@ -110,3 +110,9 @@ body {
     width: 120px;
   }
 }
+
+@media (max-width: 286px) {
+  .profile-img {
+    width: 100px;
+  }
+}

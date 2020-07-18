@@ -1,0 +1,112 @@
+body {
+  background: linear-gradient(
+    180deg,
+    #51e2f5,
+    #9df9ef,
+    #e3e7a1,
+    #ffa8b6,
+    #a28089
+  );
+  margin: 0;
+}
+
+@media (max-width: 400px) {
+  .body {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    background-color: black;
+    height: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #ff1d58;
+  opacity: 0.9;
+  border-radius: 2%;
+  box-shadow: 0 3px 6px 0.5px black;
+}
+
+@media (max-width: 400px) {
+  .card {
+    background-color: black;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    font-size: 12px;
+  }
+}
+
+.card-content {
+  text-align: center;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.card-subtitle > span {
+  color: springgreen;
+}
+
+.divider {
+  flex-grow: 1;
+  border-bottom: 1px solid white;
+  margin: 5px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+@media (max-width: 400px) {
+  .social {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+}
+
+.right {
+  margin: 0 10px 0 10px;
+  font-size: 30px;
+  color: white;
+  transition: color 0.5s, transform 0.5s;
+}
+
+@media (max-width: 400px) {
+  .social-link {
+    border: 1px solid springgreen;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+}
+
+.right:hover {
+  color: springgreen !important;
+  transform: scale(1.2) rotate(360deg);
+}
+
+.profile-img {
+  width: 170px;
+  border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  .profile-img {
+    width: 120px;
+  }
+}

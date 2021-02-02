@@ -87,15 +87,27 @@ main {
 .circle1 {
   box-shadow: 0 0 50px #5622ff;
   background: linear-gradient(-180deg, #5622ff, #4190fd);
-  top: 5%;
-  right: 15%;
+  top: 10%;
+  right: 30%;
 }
 
 .circle2 {
   box-shadow: 0 0 48px #d84869;
   background: linear-gradient(-26deg, #d84869, #f46641);
   bottom: 5%;
-  left: 10%;
+  left: 25%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .circle1 {
+    top: 15%;
+    right: 15%;
+  }
+
+  .circle2 {
+    left: 15%;
+    bottom: 15%;
+  }
 }
 
 @media only screen and (max-width: 512px) {
@@ -121,12 +133,13 @@ main {
   }
 
   .circle1 {
-    top: 8%;
+    top: 15%;
     right: 3%;
   }
 
   .circle2 {
     left: 5%;
+    bottom: 15%;
   }
 }
 
